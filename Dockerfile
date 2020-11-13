@@ -10,7 +10,7 @@ RUN apt-get update && \
 EXPOSE 22
 
 RUN apt-get update && \
-    apt-get install -y memcached unzip php5 php5-cli php5-dev php5-xdebug php-db php-pear php5-sqlite php5-memcache build-essential libaio1 re2c sqlite sqlite3 && \
+    apt-get install -y memcached unzip php5 php5-cli php5-dev php5-curl php5-xdebug php-db php-pear php5-sqlite php5-memcache build-essential libaio1 re2c sqlite curl sqlite3 && \
     ln -s /usr/include/php5 /usr/include/php
 
 # Install Oracle Instant Client Basic and SDK
